@@ -1,0 +1,446 @@
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    
+    /*FONTS*/
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#header {
+    height: 120px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    border-top: 5px solid #61dafb;
+}
+
+.center {
+    width: 75%;
+    margin: 0px auto;
+}
+
+#logo {
+    width: 30%;
+    font-size: 30px;
+    float: left;
+    margin-top: 35px;
+}
+
+#logo img {
+    display: block;
+    float: left;
+    height: 60px;
+    margin-top: -9px;
+    margin-right: 0px;
+    animation: turn infinite 30s linear; /*ESTABLECEMOS EL NOMBRE LA ANIMACION, DURACION Y EN QUE FORMA SE HARA*/    
+}
+
+@keyframes turn { /*PARA CONTROLAR LA ANIMACION PUNTO POR PUNTO*/
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#brand {
+    display: block;
+    margin: 0px;
+    float: left;
+}
+
+#menu {
+    width: 70%;
+    float: right;
+    font-size: 18px;
+}
+
+#menu ul{
+    line-height: 85px;
+    width: 60%;
+    float: right;
+}
+
+#menu ul li{
+    list-style: none;
+    height: 46px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #444;
+    transition: 300ms all;
+}
+
+#menu a:hover{
+    color: rgb(114, 206, 230);
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+#slider {
+    width: 100%;
+    height: 350px;
+    /*line-height: 320px;*/
+    color: white;
+    text-shadow: 0px 0px 5px #444;
+
+    /*GRADIENT CSS GENERATOR*/
+    background: rgba(147,206,222,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
+}
+
+#slider h1 {
+    margin-top: 0.2px;
+    padding: 0px;
+    padding-top: 140px;
+    text-align: center;
+}
+
+.btn-white {
+    display: block;
+    background: white;
+    color: rgb(153, 130, 114);
+    padding: 10px;
+    width: 120px;
+    height: 35px;
+    margin: 0px auto;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: none;
+    text-decoration: none;
+    line-height: 35px;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-top: 40px;
+    border-radius: 4px;
+    transition: 300ms all;
+}
+
+.btn-white:hover {
+    background: rgb(158, 155, 155);
+    color: white;
+}
+
+#slider.slider-small {
+    height: 150px;
+}
+
+#slider.slider-small h1 {
+    margin-top: 0.2px;
+    padding: 0px;
+    padding-top: 53px;
+    text-align: center;
+}
+
+#content {
+    width: 70%;
+    float: left;
+    min-height: 650px;
+    border-right: 20px;
+}
+
+#sidebar {
+    width: 25%;
+    float: left;
+}
+
+.sidebar-item {
+    background: #f7f7f7;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.sidebar-item h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px;
+    border-bottom: 3px solid rgb(241, 238, 238);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar-item .btn{    
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.btn {
+    display: block;
+    background: black;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    max-width: 120px;
+    transition: 300ms all;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-success {
+    background: rgb(14, 145, 2);
+}
+
+.btn-success:hover {
+    background: rgb(158, 155, 155);
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    min-height: 30px;
+    border: 1px solid rgb(226, 225, 225);
+    padding: 3px;
+    margin-bottom: 5px;
+    transition: 300ms all;
+}
+
+textarea{
+    width: 100%;    
+    height: 150px;
+    min-width: 100%;
+    min-height: 150px;
+    max-width: 100%;
+    max-height: 300px;
+    transition: 30ms all;
+}
+
+.mid-form{
+    width: 50%;
+    margin: 0px auto;
+}
+
+.mid-form label{
+    text-align: left;
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    box-shadow: 0px 0px 2px rgb(209, 206, 206) inset;
+}
+
+/* TO CLEAN BORDER INTO INPUTS*/
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#footer {
+    background: #f7f7f7;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    color: #444;
+}
+
+#footer p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.article-item {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.article-item .image-wrap {
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+}
+
+.article-item .image-wrap img {
+    height: 100%;
+    text-align: center;
+}
+
+.article-item h2{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 7px;
+}
+
+.article-item .date {
+    display: block;
+    width: 100%;
+    color: rgb(180, 177, 177);
+}
+
+.article-item a {
+    display: block;
+    color: #444;
+    text-decoration: none; /*REMOVE THE DECORATION FOR a = link in html*/
+    margin-top: 10px;
+}
+
+.article-item a:hover{
+    text-decoration: underline;
+}
+
+.subheader{
+    font-size: 38px;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.article-details .image-wrap{
+    float: none;
+    width: 98%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.article-details .image-wrap img{
+    width: 100%;
+    height: auto;
+}
+
+.article-details .subheader{
+    margin-bottom: 5px;
+    border: none;
+}
+
+.radiobuttons{
+    margin-top: 10px;
+    margin-bottom: 12px;
+    float: left;
+    padding: 0px;
+}
+
+/*RESPONSIVE*/
+/*DESDE LA ANCHURA 0PX HASTA LA ANCHURA 1488PX DE LA PANTALLA, SE EJECUTARAN ESTOS ESTILOS*/
+@media (max-width: 1488px){
+    .center {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1314px){
+    .center {
+        width: 95%;
+    }
+    #menu ul{
+        width: auto;
+    }
+}
+
+@media (max-width: 797px){
+   #logo {
+       float: none;
+       width: 240px;
+       margin: 0px auto;
+       margin-top: 20px;
+   }
+
+   #menu,
+   #menu ul{
+       clear: both;
+       float: none;
+       width: 100%;
+       margin: 0px;
+       padding: 0px;
+       line-height: 43px;
+   }
+
+   #content{
+       float: none;
+       width: 100%;       
+   }
+
+   #sidebar{
+       float: none;
+       width: 60%;
+       margin: 0px auto;
+       margin-bottom: 50px;
+   }
+
+   #slider h1{
+       padding-top: 115px;
+       font-size: 25px;
+   }
+
+   .btn-white{
+       font-size: 15px;
+       height: 30px;
+       width: 100px;
+   }
+   
+   .mid-form{
+       width: 70%;
+   }
+}
+
+@media (max-width: 497px){
+    #header{
+        min-height: 130px;
+        overflow: hidden;
+    }
+
+    #menu,
+    #menu ul{
+        line-height: 50px;
+    }
+
+    #menu,
+    #menu ul li{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    #slider{
+        height: 180px;
+    }
+
+    #slider h1{
+        font-size: 19px;
+        padding-top: 30px;
+    }
+
+    #slider .btn-white{
+        margin-top: 20px;
+        font-size: 14px;
+        height: 25px;
+        width: 90px;
+    }
+
+    #slider.slider-small{
+        height: 80px;
+    }
+
+    #slider.slider-small h1{
+        padding-top: 25px;
+    }
+}
