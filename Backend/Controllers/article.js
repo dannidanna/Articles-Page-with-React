@@ -238,9 +238,10 @@ var controller = {
             });
         }
 
-        // Conseguir nombre y la extensión del archivo
+        //Get name and file extension
         if(req.files){
-            var file_path = req.files.image.path;
+           // var file_path = req.files.image.path; //OTHER OPTION FOR FILES
+            var file_path = req.files.file0.path;
             var file_split = file_path.split('\\');
 
             // * ADVERTENCIA * EN LINUX O MAC
